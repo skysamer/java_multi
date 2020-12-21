@@ -1,0 +1,15 @@
+package day01;
+
+public class Test04 {
+	// 데이터(변수) + 기능(함수)
+	public static void main(String[] args) {
+		int num1= 127;
+		System.out.println(num1);
+//		num2= 99.9;
+//		'A';
+//		10>9;
+//		"홍길동";
+
+	}
+
+}

@@ -1,0 +1,15 @@
+package day01;
+
+public class Prob1 {
+
+	public static void main(String[] args) {
+		int tom=-1;
+		int marry=9;
+		boolean john=false;
+		String sarah="Sarah Jang";
+		System.out.printf("our friends..\n%d, %d, %b, and %s", tom, marry, john, sarah);
+				
+
+	}
+
+}
