@@ -1,0 +1,26 @@
+package day03;
+
+public class Test02 {
+	public static void main(String[] args) {
+		
+		System.out.println("성적처리 App start");
+		
+		String name = null;
+		int kor=0;
+		int math=0;
+		
+		String msg= "Yes";
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		System.out.println("성적처리 App end");
+
+	}
+
+}

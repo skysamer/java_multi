@@ -1,0 +1,11 @@
+package day02;
+
+public class Test04 {
+	public static void main(String[] args) {
+		double x=100, y=7;
+		System.out.println(x/y);
+		System.out.println(x%y);
+
+	}
+
+}

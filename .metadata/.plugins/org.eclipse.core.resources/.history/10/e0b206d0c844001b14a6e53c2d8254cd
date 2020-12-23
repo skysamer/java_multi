@@ -1,0 +1,48 @@
+package day03;
+
+import java.util.Scanner;
+
+public class Test02 {
+	public static void main(String[] args) {
+		
+		System.out.println("성적처리 App start");
+		
+		String name = null;
+		int kor=0;
+		int math=0;
+		// 
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("계속 진행하고 싶으면 yes를 입력하세요, 그렇지 않으면 no를 입력하세요");
+		String msg= scanner.nextLine();
+		
+		if(!msg.equalsIgnoreCase("Yes")) {
+			if(scanner!=null) scanner.close();
+			scanner = null;
+			System.out.println("종료합니다.");
+			return;
+		}
+		
+		System.out.println("학생 이름을 입력하세요..");
+		name = scanner.nextLine();
+		
+		System.out.println("국어 점수를 입력하세요");
+		kor = Integer.parseInt(scanner.nextLine());
+		
+		System.out.println("수학 점수를 입력하세요");
+		math = scanner.nextInt();
+		
+		double avg = (kor+math) / 2.;
+		
+		System.out.printf("이름: %s, 국어: %d, 수학: %d, 평균: %2f, 등급: \n", name, kor, math, avg);
+		
+		
+		
+		
+		System.out.println("성적처리 App end");
+		if(scanner!=null) scanner.close();
+		scanner = null;
+		return;
+	}
+
+}

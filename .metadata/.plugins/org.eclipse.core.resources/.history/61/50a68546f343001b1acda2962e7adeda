@@ -1,0 +1,17 @@
+package day02;
+
+public class Test01 {
+	// 클래스의 구성요소
+	// 변수(멤버 변수)+기능(method)
+	
+	
+	public static void main(String[] args) {
+		// 변수, 지역 변수, 초기화 필수
+		
+		// 기본형
+		
+		// 참조형
+
+	}
+
+}

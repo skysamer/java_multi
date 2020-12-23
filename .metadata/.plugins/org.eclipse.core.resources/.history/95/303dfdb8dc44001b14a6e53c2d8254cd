@@ -1,0 +1,27 @@
+package day03;
+
+public class Test03 {
+
+	public static void main(String[] args) {
+		
+		int i=0;
+		
+		switch(i) {
+		case 1:
+			System.out.println("1층 약국");
+			break;
+		case 2:
+			System.out.println("2층 피부과");
+			break;
+		case 3:
+			System.out.println("3층 내과");
+			break;
+		case 4:
+			System.out.println("4층 스포츠센터");
+			break;
+		}
+		
+
+	}
+
+}

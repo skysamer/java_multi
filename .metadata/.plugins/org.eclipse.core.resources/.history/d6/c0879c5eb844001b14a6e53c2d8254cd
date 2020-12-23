@@ -1,0 +1,29 @@
+package day02;
+
+public class Prob2_이상민 {
+	public static void main(String[] args) {
+		
+		// Q1
+		int num=-90;
+		String name1=num > 0 ? "양수" :  (num < 0 ? "음수" : "0");
+		System.out.printf("%d: %s \n", num, name1);
+		
+		// Q2
+		char ch='A';
+		if((int)ch>=65 && (int)ch<=90) {
+			System.out.printf("%c: %c \n", ch, (char)(ch+32));
+		}
+		else {
+			System.out.printf("%c: %c \n", ch, ch);
+		}
+		
+		int x = 2;
+		int y = 5;
+		
+		System.out.println(y >= 5 || x < 0 && x > 2);     
+
+	
+
+	}
+
+}

@@ -1,0 +1,102 @@
+
+[1] 다음 중 기본형 이 아닌 것은 (primitive type) ?  b
+     a. int     b. Byte     c. double      d. boolean
+     
+
+    
+     
+[2] 다음 문장들의 출력결과를 적으세요.오류가 있는 문장은 오류라고 적으시오?  
+   System.out.println(1+2);
+   System.out.println('1'+'2');
+   System.out.println("1"+"2");
+   System.out.println("~~ "+1+2);
+   System.out.println(1+2+"~~");
+   System.out.println("Hello"+"java"+'!'); 
+   
+    
+       
+[3] 다음 중 변수의 이름으로 사용할 수 있는 것은 모두 고르시오 ?
+  a. $ystem 
+  b. num#5 
+  c. 7num
+  d. 자바
+  e. new 
+  f. new_ 
+  g. $MAX_NUM  
+  h. hello@com 
+  
+       
+[4] 다음중 변수를 잘못 초기화 한 것은 모두 고르시오 ? 
+  a. byte b = 256; 
+  b. char c = ''; 
+  c. char answer = 'no'; 
+  d. float f = 3.14;  
+  e. double d = 1.4e3f;
+
+  
+   
+    
+ 
+[5] 다음 연산의 실행 결과는? 
+
+public class Prob2_2 {
+	public static void main(String[] args) {
+		int x = 2;
+		int y = 5;
+		char c = 'A'; // 'A' 65 
+		System.out.println(y >= 5 || x < 0 && x > 2);     
+		System.out.println( !('A' <= c && c <='Z') );     
+		System.out.println('C'-c);                        
+		System.out.println('5'-'0');                      
+		System.out.println(c+1);                         
+		System.out.println(++c);                          
+		System.out.println(c++);                          
+		System.out.println(c);                            
+	}
+} 
+
+
+
+==== 여기서 부터는 제출하세요 ======
+
+public class Prob1 {
+	public static void main(String[] args) {
+/*
+ 아래는 변수 num의 값에따라  양수 음수  0을 출력하는  코드이다.
+삼항 연산자를 이용해서 에 알맞은 코드를 완성하세요. 
+*/
+	int num = -90;
+
+        System.out.println(num+" 양수 음수  0 중 하나 출력");    
+	/*
+        다음은 대문자를 소문자로 변경하는 코드입니다.
+        변수 ch에 저장된 문자가 대문자 인 경우에만 
+	소문자로 변경하는 코드를 완성 합니다.
+  	*/
+	char ch = 'P';
+	
+		System.out.println(ch+" 변환된값 출력 ");                            
+
+
+	}
+}          
+
+ 
+구구단을 만들어봅니다.
+출력화면
+public class Prob2 {
+	public static void main(String[] args) {
+           //아래와같이 출력 되도록 코드를 완성합니다.
+        }
+}
+
+2*1= 2|3*1= 3|4*1= 4|5*1= 5|6*1= 6|7*1= 7|8*1= 8|9*1= 9|
+2*2= 4|3*2= 6|4*2= 8|5*2=10|6*2=12|7*2=14|8*2=16|9*2=18|
+2*3= 6|3*3= 9|4*3=12|5*3=15|6*3=18|7*3=21|8*3=24|9*3=27|
+2*4= 8|3*4=12|4*4=16|5*4=20|6*4=24|7*4=28|8*4=32|9*4=36|
+2*5=10|3*5=15|4*5=20|5*5=25|6*5=30|7*5=35|8*5=40|9*5=45|
+2*6=12|3*6=18|4*6=24|5*6=30|6*6=36|7*6=42|8*6=48|9*6=54|
+2*7=14|3*7=21|4*7=28|5*7=35|6*7=42|7*7=49|8*7=56|9*7=63|
+2*8=16|3*8=24|4*8=32|5*8=40|6*8=48|7*8=56|8*8=64|9*8=72|
+2*9=18|3*9=27|4*9=36|5*9=45|6*9=54|7*9=63|8*9=72|9*9=81|
+
