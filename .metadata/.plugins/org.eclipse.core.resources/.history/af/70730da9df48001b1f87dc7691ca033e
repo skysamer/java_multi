@@ -1,0 +1,13 @@
+package day04;
+
+public class Prob04_이상민 {
+	public static void main(String[] args) {
+		String strData[]={ "Java Programming" , "JDBC", "Oracle10g", "JSP/Servlet" };
+		
+		for(int i=3; i>=0; i--) {
+			System.out.println(strData[i]);
+		}
+
+	}
+
+}

@@ -1,0 +1,21 @@
+package day04;
+
+public class Test05 {
+	public static void main(String[] args) {
+		int[] num1= {1, 1, 1};
+		int[] num2= {2, 2, 2, 2, 2};
+		int[] num3= {3};
+		
+		int[][] two= {num1, num2, num3};
+		
+		for(int row=0; row<two.length; row++) {
+			for(int col=0; col<two[row].length; col++) {
+				System.out.printf("%d ", two[row][col]);
+			}
+			System.out.println();
+			System.out.println();
+		}
+
+	}
+
+}
