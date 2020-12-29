@@ -1,0 +1,11 @@
+package day05;
+
+public class Test02 {
+	public static void main(String[] args) {
+		Calc c1=new Calc();
+		int a=c1.add(111, 4343);
+		int b=c1.sub(9, 11);
+
+	}
+
+}

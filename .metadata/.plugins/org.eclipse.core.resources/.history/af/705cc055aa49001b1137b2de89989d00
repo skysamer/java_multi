@@ -1,0 +1,24 @@
+package day05;
+
+public class Prob5_이상민 {
+	public static void main(String args[]) {
+		
+		
+		
+		System.out.println( Prob5_이상민.leftPad("SDS", 6, '#') );
+		System.out.println( Prob5_이상민.leftPad("SDS", 5, '$') ); 
+		System.out.println( Prob5_이상민.leftPad("SDS", 2, '&') ); 
+	}
+	
+	
+	public static String leftPad(String str, int size, char padChar) {
+		
+		for(int i=str.length(); i<size; i++) {
+			System.out.printf("%c", padChar);
+		}
+		System.out.printf("%s", str);
+		
+		
+		return null;
+	}
+}

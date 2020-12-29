@@ -1,0 +1,12 @@
+package day05;
+
+import day04.Employee;
+
+public class Test01 {
+	public static void main(String[] args) {
+		Employee emp1 = new Employee();
+		emp1.print();
+
+	}
+
+}

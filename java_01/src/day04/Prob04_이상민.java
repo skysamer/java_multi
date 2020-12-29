@@ -6,11 +6,20 @@ public class Prob04_이상민 {
 		
 		for(int i=0; i<strData.length; i++) {
 			for(int j=(strData[i].length()-1); j>=0; j--) {
-				System.out.printf("%s", strData[i].charAt(j));
+				System.out.printf("%c", strData[i].charAt(j));
 			}
 			System.out.println();
 		}
-
+		int i;
+		int sum=0;
+		for(i=1; ; i++) {
+			int t=i%2==0 ? i*(-1) : i;
+			sum+=t;
+			if(sum>=100)
+				break;
+		}
+		
+		System.out.println(sum);
 	}
 
 }

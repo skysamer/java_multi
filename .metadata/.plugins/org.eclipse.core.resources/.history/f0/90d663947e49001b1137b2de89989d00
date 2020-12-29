@@ -1,0 +1,22 @@
+package day05;
+
+public class Test02 {
+	public static void main(String[] args) {
+		Calc c1=new Calc();
+		int a=c1.add(111, 4343);
+		int b=c1.sub(9, 11);
+		
+		System.out.println(c1.multi(a, b));
+		
+		int res=c1.multi(2, 2);
+		int res2=c1.multi(2+2+2, c1.add(9, 9));
+		
+		int i= c1.div(c1.add(c1.multi(c1.sub(2, res), res2), a), b);
+		System.out.println(i);
+		
+		
+		System.out.println("------------------------");
+
+	}
+
+}
