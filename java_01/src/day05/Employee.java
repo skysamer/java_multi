@@ -7,7 +7,7 @@ package day05;
  */
 public class Employee {
 	// 데이터+기능
-	private String name; //이름
+	protected String name; //이름
 	private String dept; //부서
 	private int age; //나이
 	

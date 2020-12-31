@@ -1,5 +1,7 @@
 package day06_abstract;
 
+import java.io.*;
+
 public interface Service {
 	
 	void delete();

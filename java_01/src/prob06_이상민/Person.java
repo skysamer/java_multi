@@ -2,6 +2,8 @@ package prob06_이상민;
 
 public class Person {
 	
+	public Person() {}
+	
 	public Person(String name, int age) {
 		this.name = name;
 		this.age = age;
