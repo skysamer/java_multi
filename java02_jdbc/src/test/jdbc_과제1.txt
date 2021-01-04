@@ -1,0 +1,36 @@
+
+문제 개요 : show() 메소드는 매개변수로 부서번호(DEPARTMENT_ID) 정보를 입력 받아서 해당
+부서에 해당하는 사원의 평균 급여정보를 출력하는 메서드이다. 
+특정 부서에 해당하는 직원정보를 출력하는 show () 메소드를 구현하시오. 
+
+특정 부서의 정보를 리턴하는 getDept()  메소드를 구현하시오. 
+
+public class Prob {
+  
+	
+        private static void show(int DEPARTMENT_ID) {
+   		
+	}
+
+        // 한번 고민해 보세여 ????
+	private static Dept getDept(int DEPARTMENT_ID) {
+   		
+	}
+
+	
+	public static void main(String[] args) {
+		show(10);
+		System.out.println("============================");
+		show(50);
+		System.out.println("============================");
+		Dept dept10 = getDept(10);
+		Dept dept30 = getDept(30);
+
+
+	}	
+}
+
+
+
+
+

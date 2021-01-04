@@ -4,6 +4,8 @@ import javax.swing.JOptionPane;
 
 public class Test02_Command {
 	public static void main(String[] args) {
+		
+//		DeleteCommand cmd=null;
 		Command cmd=null;
 		
 		String msg=JOptionPane.showInputDialog("1.Delete, 2.Insert, 3.List, 4.Update");

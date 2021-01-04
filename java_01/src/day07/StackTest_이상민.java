@@ -1,7 +1,11 @@
 package day07;
 
+import java.util.Stack;
+
 public class StackTest_이상민 {
 	public static void main(String[] args) {
+		
+		Stack<Integer> s=new Stack<Integer>();
 		
 		MyStack stack = new MyStack(10);
 		
@@ -19,7 +23,7 @@ public class StackTest_이상민 {
 		System.out.println("스택이 가득 찼습니다.");
 		}
 		
-		System.out.println("최상위 숫자 : " + stack.top());
+		System.out.println("최상위 숫자 : " + stack.peak());
 		System.out.println("최상위에서 꺼낸 숫자 : " + stack.pop());
 		System.out.println("최상위에서 꺼낸 숫자 : " + stack.pop());
 		System.out.println("");		System.out.println("== 스택 리스트 ==");
@@ -51,7 +55,7 @@ class MyStack{
 
 	public void push(int size) throws Exception {// 저장소
 		if(!isFull())
-			stackArr[++top]=size;
+			stackArr[top++]=size;
 			
 	}
 	
@@ -63,7 +67,7 @@ class MyStack{
 		return top+1==size ? true : false;
 	}
 	
-	public int top() {// 최상위 숫자
+	public int peak() {// 최상위 숫자
 		return top;
 	}
 	
@@ -73,3 +77,4 @@ class MyStack{
 		
 	}
 }
+
