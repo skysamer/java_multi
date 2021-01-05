@@ -6,15 +6,14 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import util.JDBCUtil;
+
 public class Test01 {
 
 	public static void main(String[] args) {
 
 		// oracle
-		String driver = "oracle.jdbc.OracleDriver";
-		String url = "jdbc:oracle:thin:@127.0.0.1:1521:xe";
-		String user = "scott";
-		String pw = "TIGER";
+		
 
 		String sql = "select * from emp";
 		
@@ -24,10 +23,6 @@ public class Test01 {
 		int result = 0;
 		
 		try {
-			// 1. Driver클래스를 로딩
-			Class.forName(driver); // new 
-            // 2. 로딩된 Driver클래스를 이용해서 Connection요청(url, user, pwd)
-			con =  DriverManager.getConnection(url,user,pw);
 			//3. 생성된Connection으로부터 Statement생성
 			st = con.createStatement();
 			//4. 생성된 Statement를 이용해서 sql수행 (execute, executeUpdate, executeQuery)
@@ -46,13 +41,7 @@ public class Test01 {
 			System.out.println(e.getMessage());
 		} finally {
               //7. 자원정리(connection, statement, resultset)
-				try {
-					if(rs != null)	rs.close();
-					if(st != null)	st.close();
-					if(con != null)	con.close();
-				} catch (SQLException e) {
-					e.printStackTrace();
-				}
+				JDBCUtil.close(con, st, rs);
 		}
 
 		
