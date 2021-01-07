@@ -4,87 +4,50 @@ import java.io.Serializable;
 
 public class UserVO implements Serializable{
 	
-	private String id;
-	private String pw;
-	private String name;
+	String id; //varchar(10)  primary key,
+	String password; //varchar(10)  not null,
+	String name; //varchar(20),
+	String role;
+	
+	
 	
 	public UserVO() {
-		super();
 	}
 
-	public UserVO(String id, String pw, String name) {
+	public UserVO(String id, String password, String name, String role) {
 		super();
 		this.id = id;
-		this.pw = pw;
+		this.password = password;
 		this.name = name;
+		this.role = role;
+	} //varchar(10) default 'user' check(role in ('user','admin'))
+
+	public void setPassword(String string) {
+		// TODO Auto-generated method stub
+		
 	}
 
-	public String getId() {
-		return id;
-	}
-
-	public void setId(String id) {
-		this.id = id;
-	}
-
-	public String getPw() {
-		return pw;
-	}
-
-	public void setPw(String pw) {
-		this.pw = pw;
+	public void setName(String string) {
+		// TODO Auto-generated method stub
+		
 	}
 
 	public String getName() {
-		return name;
+		// TODO Auto-generated method stub
+		return null;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public String getId() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
-	@Override
-	public String toString() {
-		return "UserVO [id=" + id + ", pw=" + pw + ", name=" + name + "]";
+	public String getPassword() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((id == null) ? 0 : id.hashCode());
-		result = prime * result + ((name == null) ? 0 : name.hashCode());
-		result = prime * result + ((pw == null) ? 0 : pw.hashCode());
-		return result;
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		UserVO other = (UserVO) obj;
-		if (id == null) {
-			if (other.id != null)
-				return false;
-		} else if (!id.equals(other.id))
-			return false;
-		if (name == null) {
-			if (other.name != null)
-				return false;
-		} else if (!name.equals(other.name))
-			return false;
-		if (pw == null) {
-			if (other.pw != null)
-				return false;
-		} else if (!pw.equals(other.pw))
-			return false;
-		return true;
-	}
 	
 	
-
+	
 }

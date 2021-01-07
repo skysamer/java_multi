@@ -7,63 +7,46 @@ import vo.UserVO;
 
 public class UserServiceImpl implements UserService{
 	
-	private UserDAO dao;
+	UserDAO dao;
 	
 	
 
 	public UserServiceImpl() {
 		super();
 	}
-	
 
 	public UserServiceImpl(UserDAO dao) {
 		super();
 		this.dao = dao;
 	}
 	
+	
 
 	public UserDAO getDao() {
 		return dao;
 	}
 
-
-
 	public void setDao(UserDAO dao) {
 		this.dao = dao;
 	}
 
-
+	@Override
+	public boolean idCheck(String id) {
+		// TODO Auto-generated method stub
+		return dao.idCheck(id);
+	}
 
 	@Override
-	public int insertUser(String id, String pw, String name) {
-		return dao.insertUser(id, pw, name);
+	public void addUser(UserVO vo) {
+		dao.addUser(vo);
 		
 	}
 
 	@Override
-	public int insertUser(UserVO vo) {
-		return dao.insertUser(vo);
+	public boolean login(String id, String pw) {
+		return dao.login(id, pw);
 	}
-
-	@Override
-	public void updateUser(UserVO vo) {
-		dao.updateUser(vo);
-	}
-
-	@Override
-	public void deleteUser(String id) {
-		dao.deleteUser(id);
-	}
-
-	@Override
-	public UserVO getUser(String id) {
-		return dao.getUser(id);
-	}
-
-	@Override
-	public List<UserVO> getUserAll() {
-		return dao.getUserAll();
-	}
+	
 	
 
 }
