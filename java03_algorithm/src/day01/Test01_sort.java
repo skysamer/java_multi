@@ -16,14 +16,18 @@ public class Test01_sort {
 		}
 		
 		System.out.println(Arrays.toString(arr));
+		
 		//Sort.selectionSort(arr);
 		//Arrays.sort(arr);
 		
-		Sort.bubbleSort(arr);
-		System.out.println(Arrays.toString(arr));
+//		Sort.bubbleSort(arr);
+//		System.out.println(Arrays.toString(arr));
 		
 //		System.out.printf("selectionSort: %d ms %n", end-start);
 //		System.out.printf("Quick Sort: %d ms %n", end-start);
+		
+		Sort.quickSort(arr, 0, arr.length-1);
+		System.out.println(Arrays.toString(arr));
 		
 		
 		

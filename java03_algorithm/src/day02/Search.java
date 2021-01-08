@@ -15,6 +15,7 @@ public class Search {
 		return -1;
 	}
 	
+	//o(log n)
 	public static int binSearch(int[] arr, int n, int key) {
 		int start=0;
 		int end=n-1;

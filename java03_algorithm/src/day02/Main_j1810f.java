@@ -2,49 +2,49 @@ package day02;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class Main_j1810f {
 	static int[] c=new int[9];
 	static int n=c.length;
-	static int[] v=new int[n];
+	static boolean[] v=new boolean[9];
 
 	public static void main(String[] args) throws FileNotFoundException {
 		
 		System.setIn(new FileInputStream("input/input1.txt"));
 		Scanner sc=new Scanner(System.in);
 		
-		for(int i=0; i<c.length; i++) {
+		for(int i=0; i<n; i++) {
 			c[i]=sc.nextInt();
 		}
 		
-		f(0, 0).forEach(i->System.out.println(i));
+		f(0, 0, 0);
 		
 		sc.close();
 		sc=null;
 	}
 
-	public static List<Integer> f(int idx, int cnt) {
-		List<Integer> list=null;
-		if(idx==n) {
-			int sum=0;
+	public static void f(int idx, int cnt, int sum) {
+		if(sum>100) return;
+		if(cnt==7 && sum==100) {
 			for(int i=0; i<n; i++) {
-				if(v[i]==1&&cnt==7) {
-					sum+=c[i];
-					list.add(c[i]);
-				}
-				if(sum==100) {
-					return list;
-				}
+				if(v[i]) System.out.println(c[i]);
 			}
-			return list;
+			return;
+			//System.exit(0);  //App 종료
 		}
-		v[idx]=1;
-		f(idx+1, cnt+1);
-		v[idx]=0;
-		f(idx+1, cnt);
+		if(cnt==7||idx==9) return;
+	
+		v[idx]=true;
+		f(idx+1, cnt+1, sum+c[idx]);
+		
+		v[idx]=false;
+		f(idx+1, cnt, sum);
 	}
+	
+		
 }
 
 
