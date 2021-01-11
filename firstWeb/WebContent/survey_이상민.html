@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>설문 조사 시스템</title>
+</head>
+<body>
+<h1>
+설문 조사 <img alt="SDS" src="img/SDS.jpg">
+</h1>
+
+<p>아래 항목을 채워주세요</p>
+<h2>
+신상 정보:
+</h2>
+<br>
+<table>
+
+</table>
+<form action="hiServlet" method="post">
+	이름              <input type="text" name="id"><br>
+	전화번호          <input type="number" name="phone"><br>
+	이메일 주소       <input type="email" name="email"><br>
+	생일       		<input type="date" name="date"><br>
+</form>
+<form action="hiServlet">
+<h2>
+어떤 경로로 알게 되었습니까?<br>
+</h2>
+<input type="checkbox" name="news">기사
+<input type="checkbox" name="commercial">광고
+<input type="checkbox" name="etc">기타<br>
+</form>
+<h2>
+좋아하는 스포츠는 무엇입니까?<br>
+</h2>
+<input type="checkbox" name="tennis">테니스
+<input type="checkbox" name="golf">골프
+<input type="checkbox" name="basketball">농구<br>
+<input type="checkbox" name="squacy">스쿼시
+<input type="checkbox" name="boring">볼링
+<input type="checkbox" name="football">축구<br>
+
+연락방법
+<select name="call">
+	<option value="email">email
+	<option value="phone" selected>phone
+	<option value="sms">sms<br><br>
+	<br>
+<form action="hiServlet"><br>
+<br><input type="checkbox" name="checkpm" checked>
+개인정보 활용에 동의합니다.
+</form>
+<br><br>
+<form action="hiServlet" method="post">
+	<input type="submit" value="submit">
+</form>
+</select>
+</body>
+</html>
